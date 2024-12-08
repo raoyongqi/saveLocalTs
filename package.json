@@ -1,0 +1,26 @@
+{  
+  "name": "netcloud",
+  "version": "1.0.0",
+  "main": "dist/main/main.js",
+  "private": "true",
+  "scripts": {
+    "dev": "vite build --config ./src/renderer/vite.config.js",
+    "start": "cross-env NODE_ENV=development electron .",
+    "all": "npm run dev && npm run build &&  cross-env NODE_ENV=development electron .",
+
+    "build": "tsc --project tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.4.38",
+    "@types/node": "^22.10.1",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "cross-env": "^7.0.3",
+    "electron": "^33.2.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "@vitejs/plugin-react": "^4.3.4"
+  }
+}

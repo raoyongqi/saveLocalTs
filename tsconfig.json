@@ -1,0 +1,25 @@
+// tsconfig.json
+{
+    "compilerOptions": {
+        "target": "ESNext" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+        "module": "CommonJS" ,
+      "moduleResolution": "node",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      
+      "forceConsistentCasingInFileNames": true,
+      "outDir": "./dist",           
+      "rootDir": "./src",     
+    },
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx",
+      "src/renderer/vite.config.js",
+      "src/electron.d.ts"  // 确保包含这个类型声明文件
+    ],
+    "exclude": [
+        "node_modules"
+      ]
+  }
+  
